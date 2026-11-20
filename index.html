@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"/>
+    <script type="module" src="oop/tema.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo"><a class="logo-tautan" href="index.html" aria-label="Kuroshiro"><img src="images/1.png" alt="Kuroshiro"></a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="index.html">Kuroshiro</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light" role="button" tabindex="0" aria-label="Ganti mode gelap" title="Mode gelap">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="menu-utama">
+        <div class="kotak-home">
+            <img class="gambar-home" src="images/pieces/white/pawn.png"/>    
+            <h1 class="teks">Main sama bot</h1>
+            <button class="tombol-biasa" onclick="window.location.href='./bot.html'">Mulai</button>
+        </div>
+
+        <div class="kotak-home">
+            <img class="gambar-home" src="images/berdua.png"/>  
+            <h1 class="teks">Main berdua sama temenmu</h1>
+            <button class="tombol-biasa" onclick="window.location.href='./2p_mode/multiplayer.html'">Mulai</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

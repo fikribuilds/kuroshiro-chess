@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catur</title>
+        <script>
+            (function () {
+                try {
+                    var t = localStorage.getItem("tema");
+                    if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                    if (t === "dark") document.documentElement.classList.add("dark");
+                } catch (e) {}
+            })();
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <script type="module" src="oop/initial_mapping.js"></script>
+        <script type="module" src="oop/renderHtml.js"></script>
+        <script type="module" src="oop/tema.js"></script>
+    </head>
+    <body>
+        <div class="kontainer">
+            <div class="bar-atas">
+                <div class="status"></div>
+            </div>
+            <div class="kontainer-utama">
+            </div>
+        </div>
+    </body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo"><a class="logo-tautan" href="index.html" aria-label="Kuroshiro"><img src="images/1.png" alt="Kuroshiro"></a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="index.html">Kuroshiro</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+            </div>
+
+            <div class="info-giliran" aria-live="polite">
+                <span class="jam jam-white aktif"><i class="titik"></i><span class="jam-nama">Putih</span><span class="jam-waktu">10:00</span></span>
+                <span class="jam jam-black"><i class="titik"></i><span class="jam-nama">Hitam</span><span class="jam-waktu">10:00</span></span>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light" role="button" tabindex="0" aria-label="Ganti mode gelap" title="Mode gelap">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+</html>
